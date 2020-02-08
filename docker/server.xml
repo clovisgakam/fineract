@@ -165,8 +165,10 @@
              resources under the key "UserDatabase".  Any edits
              that are performed against this UserDatabase are immediately
              available for use by the Realm.  -->
+        <!--Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+               resourceName="UserDatabase"/-->
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
-               resourceName="UserDatabase"/>
+               resourceName="jdbc/mifosplatform-tenants"/>
       </Realm>
 
       <Host name="localhost"  appBase="webapps"
